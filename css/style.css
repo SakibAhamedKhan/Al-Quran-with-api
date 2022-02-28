@@ -7,6 +7,9 @@
 	border-radius: 5px;
 	color: rgb(70, 69, 69);
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .para-card:hover{
 	border-color: rgb(158, 156, 156);
@@ -17,8 +20,10 @@
 	background-color: rgb(245, 243, 243);
 	width: 50px;
 	height: 50px;
+	margin: 0 20px 0 10px;
 	border-radius: 5px;
 	transform: rotate(45deg);
+	
 }
 .para-number {
 	transform: rotate(-45deg);
