@@ -18,7 +18,11 @@ const displaySurah = (data) => {
 		// div.innerHTML = `
 			
 		// `;
-		container.innerHTML += `<div class='text-center fw-bold border border-2 ayah p-3 rounded my-2'>${d.text.arab} (${index+1}) <div class='d-block fw-normal pt-2'>${d.text.transliteration.en}</div> </div>`;
+		let trns = d.text.transliteration.en;
+		let str = trns.split(" ");
+		str = str.reverse();
+		str = str.join(' ');
+		container.innerHTML += `<div class='text-center fw-bold border border-2 ayah p-3 rounded my-2'>${d.text.arab} (${index+1}) <div class='d-block fw-normal pt-2 ayah-translations'>${str}</div> </div>`;
 
 		// <div class='d-inline fs-4'>${d.text.arab}</div> <div class='d-inline-block ayah  mx-2'>${index+1}</div>
 		// container.innerText += `${d.text.arab}`;
