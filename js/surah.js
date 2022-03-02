@@ -18,10 +18,10 @@ const displaySurah = (data, numberOfSurah) => {
 		// div.innerHTML = `
 			
 		// `;
-		let trns = d.text.transliteration.en;
-		let str = trns.split(" ");
-		str = str.reverse();
-		str = str.join(' ');
+		let str = d.text.transliteration.en;
+		// let str = trns.split(" ");
+		// str = str.reverse();
+		// str = str.join(' ');
 		container.innerHTML += `
 		<div class='text-center fw-bold border border-2 ayah p-3 rounded my-2'>
 			${d.text.arab} (${index+1}) 
@@ -29,8 +29,8 @@ const displaySurah = (data, numberOfSurah) => {
 				${str}
 			</div>	
 			<div>
-				<button class="btn  btn-success mt-3" onclick="loadAudioOfSurah(${index},${numberOfSurah},false)">Stop</button>
-				<button class="btn  btn-success mt-3" onclick="loadAudioOfSurah(${index},${numberOfSurah},true)">Play</button>
+				<button class="btn  btn-success mt-3 px-4" onclick="loadAudioOfSurah(${index},${numberOfSurah},false)">Stop</button>
+				<button class="btn  btn-success mt-3 me-2 px-4" onclick="loadAudioOfSurah(${index},${numberOfSurah},true)">Play</button>
 			</div>
 		</div>
 		
