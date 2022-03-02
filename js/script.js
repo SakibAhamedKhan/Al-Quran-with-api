@@ -10,7 +10,7 @@ const displayAllPara = (data) => {
 	data.forEach(d => {
 		const div = document.createElement('div');
 		div.classList.add('para-card');
-		div.classList.add('col-3');
+		div.classList.add('col-lg-4');
 		div.onclick = () => {
 			const  url = `../surah.html?surah=${d.number}`;
 			window.location.href = url;
